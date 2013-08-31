@@ -1,0 +1,20 @@
+{
+	"name": "luigi_node",
+	"default_attributes": {
+		"luigi": {
+            "user": "vagrant",
+            "group": "vagrant",
+            "venv_dir": "/home/vagrant/luigi_venv"
+        }
+    },
+	"override_attributes": {},
+	"json_class": "Chef::Role",
+	"description": "",
+	"chef_type": "role",
+	"run_list": [
+		"recipe[apt]",
+		"recipe[git]",
+		"recipe[python]",
+		"recipe[luigi-node]"
+	]
+}
