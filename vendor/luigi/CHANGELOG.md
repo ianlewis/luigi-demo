@@ -1,11 +1,11 @@
-luigi-node CHANGELOG
+luigi CHANGELOG
 ====================
 
-This file is used to list changes made in each version of the luigi-node cookbook.
+This file is used to list changes made in each version of the luigi cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of luigi-node
+- [your_name] - Initial release of luigi
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

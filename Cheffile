@@ -6,11 +6,8 @@ cookbook 'apt'
 cookbook 'python'
 cookbook 'git'
 
-cookbook "luigi-node",
-  :path => "vendor/luigi-node"
+cookbook "luigi",
+  :path => "vendor/luigi"
 
-cookbook "luigi-scheduler",
-  :path => "vendor/luigi-node"
-
-cookbook "cloudera",
-  :path => "vendor/luigi-node"
+cookbook "cloudera-hadoop",
+  :path => "vendor/cloudera-hadoop"

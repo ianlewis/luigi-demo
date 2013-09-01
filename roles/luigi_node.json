@@ -15,6 +15,6 @@
 		"recipe[apt]",
 		"recipe[git]",
 		"recipe[python]",
-		"recipe[luigi-node]"
+		"recipe[luigi::node]"
 	]
 }

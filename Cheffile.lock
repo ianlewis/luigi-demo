@@ -22,23 +22,21 @@ SITE
     yum (2.3.2)
 
 PATH
-  remote: vendor/luigi-node
+  remote: vendor/cloudera-hadoop
   specs:
-    cloudera (0.1.0)
-      git (>= 0.0.0)
-      python (>= 0.0.0)
-    luigi-node (0.1.0)
-      git (>= 0.0.0)
-      python (>= 0.0.0)
-    luigi-scheduler (0.1.0)
+    cloudera-hadoop (0.1.0)
+
+PATH
+  remote: vendor/luigi
+  specs:
+    luigi (0.1.0)
       git (>= 0.0.0)
       python (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)
-  cloudera (>= 0)
+  cloudera-hadoop (>= 0)
   git (>= 0)
-  luigi-node (>= 0)
-  luigi-scheduler (>= 0)
+  luigi (>= 0)
   python (>= 0)
 
