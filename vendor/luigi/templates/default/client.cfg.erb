@@ -1,0 +1,7 @@
+[hadoop]
+version: <%= node[:luigi][:hadoop_version] %>
+jar: <%= node[:luigi][:hadoop_streaming_jar_path] %>
+
+[core]
+default-scheduler-host: <%= node[:luigi][:scheduler_host] %>
+error-email: <%= node[:luigi][:error_email] %>

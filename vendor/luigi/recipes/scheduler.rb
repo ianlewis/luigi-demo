@@ -6,7 +6,7 @@ service "luigid" do
   supports :restart => true, :start => true, :stop => true
 end
 
-template "redis.upstart.conf" do
+template "luigid.upstart.conf" do
   path "/etc/init/luigid.conf"
   source "luigid.upstart.conf.erb"
   owner "root"

@@ -27,3 +27,20 @@ script "install_luigi_requirements" do
   # TODO: Make this modular
   code "#{node['luigi']['venv_dir']}/bin/pip install -e git+git://github.com/spotify/luigi.git@adb67cb5bd#egg=luigi mechanize==0.2.5 tornado==3.1"
 end
+
+# First create the /etc/luigi directory.
+directory "/etc/luigi" do
+  owner "root"
+  group "root"
+  mode "0644"
+  action :create
+end
+
+# Then write out the client.cfg file.
+template "luigi.client.cfg" do
+  path "/etc/luigi/client.cfg"
+  source "client.cfg.erb"
+  owner "root"
+  group "root"
+  mode "0644"
+end

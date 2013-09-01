@@ -102,9 +102,9 @@ Vagrant.configure("2") do |config|
     chef.add_role "luigi_scheduler"
     # chef.add_role "hadoop_node"
 
-    # chef.json.merge!({
-    #   "rvm_redmine" => {"db" => {"hostname" => '192.168.30.10'}}
-    # })
+    chef.json.merge!({
+      "luigi" => {"scheduler_host" => '192.168.30.10'}
+    })
   end
 
 
