@@ -1,1 +1,17 @@
-{}
+{
+	"name": "luigi_scheduler",
+	"default_attributes": {
+		"luigi": {
+            "user": "vagrant",
+            "group": "vagrant",
+            "log_dir": "/home/vagrant"
+        }
+    },
+	"override_attributes": {},
+	"json_class": "Chef::Role",
+	"description": "",
+	"chef_type": "role",
+	"run_list": [
+		"recipe[luigi::scheduler]"
+	]
+}

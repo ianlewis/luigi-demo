@@ -16,7 +16,7 @@ end
 
 # Install requirements (luigi etc.)
 # See: http://ericholscher.com/blog/2010/nov/9/building-django-app-server-chef-part-2/
-script "Install Requirements" do
+script "install_luigi_requirements" do
   interpreter "bash"
   user node['luigi']['user']
   group node['luigi']['group']

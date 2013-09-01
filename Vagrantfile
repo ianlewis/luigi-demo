@@ -99,7 +99,7 @@ Vagrant.configure("2") do |config|
     chef.data_bags_path = "data_bags"
 
     chef.add_role "luigi_node"
-    # chef.add_role "luigi_scheduler"
+    chef.add_role "luigi_scheduler"
     # chef.add_role "hadoop_node"
 
     # chef.json.merge!({
