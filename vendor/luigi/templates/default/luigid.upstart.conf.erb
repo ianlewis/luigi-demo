@@ -1,0 +1,12 @@
+#!upstart
+description "Luigi Scheduler"
+
+env USER=<%= node[:luigi][:user] %>
+
+start on startup
+stop on shutdown
+
+respawn
+
+exec sudo -u $USER sh -c "<%= node[:luigi][:venv_dir] %>/bin/luigid 2>&1 >> \
+  <%= node[:luigi][:log_dir] %>/luigid.log"
