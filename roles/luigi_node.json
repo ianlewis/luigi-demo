@@ -4,7 +4,9 @@
 		"luigi": {
             "user": "vagrant",
             "group": "vagrant",
-            "venv_dir": "/home/vagrant/luigi_venv"
+            "venv_dir": "/home/vagrant/luigi_venv",
+            "use_hadoop": true,
+            "hadoop_streaming_jar_path": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar"
         }
     },
 	"override_attributes": {},

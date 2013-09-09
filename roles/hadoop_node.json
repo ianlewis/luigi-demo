@@ -1,1 +1,21 @@
-{}
+{
+	"name": "hadoop_node",
+	"default_attributes": {
+        "java": {
+            "install_flavor": "oracle",
+            "jdk_version": "7",
+            "oracle": {
+                "accept_oracle_download_terms": true
+            }
+        }
+    },
+	"override_attributes": {},
+	"json_class": "Chef::Role",
+	"description": "",
+	"chef_type": "role",
+	"run_list": [
+		"recipe[apt]",
+        "recipe[java]",
+        "recipe[cloudera-hadoop]"
+	]
+}

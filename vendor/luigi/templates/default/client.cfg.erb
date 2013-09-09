@@ -1,6 +1,8 @@
+<% if node[:luigi][:use_hadoop] %>
 [hadoop]
 version: <%= node[:luigi][:hadoop_version] %>
-jar: <%= node[:luigi][:hadoop_streaming_jar_path] %>
+streaming-jar: <%= node[:luigi][:hadoop_streaming_jar_path] %>
+<% end %>
 
 [core]
 default-scheduler-host: <%= node[:luigi][:scheduler_host] %>

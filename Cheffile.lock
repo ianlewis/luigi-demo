@@ -11,6 +11,8 @@ SITE
       runit (>= 1.0.0)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
+    java (1.13.0)
+      windows (>= 0.0.0)
     python (1.4.0)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
@@ -25,6 +27,7 @@ PATH
   remote: vendor/cloudera-hadoop
   specs:
     cloudera-hadoop (0.1.0)
+      java (>= 0.0.0)
 
 PATH
   remote: vendor/luigi

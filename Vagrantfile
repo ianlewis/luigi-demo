@@ -100,7 +100,10 @@ Vagrant.configure("2") do |config|
 
     chef.add_role "luigi_node"
     chef.add_role "luigi_scheduler"
-    # chef.add_role "hadoop_node"
+    chef.add_role "hadoop_node"
+
+    # Debugging
+    chef.log_level = :debug
 
     chef.json.merge!({
       "luigi" => {"scheduler_host" => '192.168.30.10'}

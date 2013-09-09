@@ -8,6 +8,7 @@ default['luigi']['group'] = 'root'
 default['luigi']['venv_dir'] = '/root/luigi'
 default['luigi']['log_dir'] = '/root'
 
+default['luigi']['use_hadoop'] = false
 default['luigi']['hadoop_version'] = 'cdh4'
 default['luigi']['hadoop_streaming_jar_path'] = 'root'
 default['luigi']['scheduler_host'] = 'localhost'
