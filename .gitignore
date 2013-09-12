@@ -1,4 +1,9 @@
 .vagrant
 cookbooks
-shared
+shared/data/
+shared/luigi
+shared/mrrunner.py
+shared/packages.tar
+shared/job-instance.pickle
 tmp
+*.pyc
