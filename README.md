@@ -51,8 +51,9 @@ provided cookbooks you can run these commands to update your environment.
 
 ### Running luigi
 
-You can run the luigi demos from the `/var/vagrant_data/` directory. The following example
-can be run without hadoop and simply counts the words in a file.
+First log into your VM using `vagrant ssh`.  You can then run the luigi demos
+from the `/var/vagrant_data/` directory. The following example can be run
+without hadoop and simply counts the words in a file.
 
     $ cd /var/vagrant_data/
     $ python bin/top_artists.py WordCount --date-interval 2013-10-29.txt --local-scheduler

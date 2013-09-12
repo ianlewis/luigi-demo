@@ -6,7 +6,7 @@ class InputText(luigi.ExternalTask):
     '''
     date = luigi.DateParameter()
     def output(self):
-        return luigi.LocalTarget(self.date.strftime('data/%Y-%m-%d.txt'))
+        return luigi.LocalTarget(self.date.strftime('%Y-%m-%d.txt'))
 
 class WordCount(luigi.Task):
     date_interval = luigi.DateIntervalParameter()
